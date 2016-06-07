@@ -98,7 +98,7 @@ function Get-IASLogs
     }
     End
     {
-        $newIASLogs | ogv
+        $newIASLogs | Out-GridView -Title "IAS Logs for file in $IASLogFilePath"
     }
 }
 
