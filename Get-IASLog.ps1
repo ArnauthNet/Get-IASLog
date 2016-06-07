@@ -11,7 +11,7 @@
 .EXAMPLE
    Another example of how to use this cmdlet
 #>
-function Get-IASLogs
+function Get-IASLog
 {
     [CmdletBinding()]
     [Alias()]
