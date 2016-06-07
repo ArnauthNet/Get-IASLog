@@ -60,15 +60,15 @@ function Get-IASLog
                 "8" { $IASLog."Authentication-Type" = "Custom"}
             }
             switch ($IASLog."Reason-Code") {
-                "0" { $IASLog."Reason-Code" = "IAS_SUCCESS"}
-                "1" { $IASLog."Reason-Code" = "IAS_INTERNAL_ERROR"}
-                "2" { $IASLog."Reason-Code" = "IAS_ACCESS_DENIED"}
-                "3" { $IASLog."Reason-Code" = "IAS_MALFORMED_REQUEST"}
-                "4" { $IASLog."Reason-Code" = "IAS_GLOBAL_CATALOG_UNAVAILABLE"}
-                "5" { $IASLog."Reason-Code" = "IAS_DOMAIN_UNAVAILABLE"}
-                "6" { $IASLog."Reason-Code" = "IAS_SERVER_UNAVAILABLE"}
-                "7" { $IASLog."Reason-Code" = "IAS_NO_SUCH_DOMAIN"}
-                "8" { $IASLog."Reason-Code" = "IAS_NO_SUCH_USER"}
+                "0"  { $IASLog."Reason-Code" = "IAS_SUCCESS"}
+                "1"  { $IASLog."Reason-Code" = "IAS_INTERNAL_ERROR"}
+                "2"  { $IASLog."Reason-Code" = "IAS_ACCESS_DENIED"}
+                "3"  { $IASLog."Reason-Code" = "IAS_MALFORMED_REQUEST"}
+                "4"  { $IASLog."Reason-Code" = "IAS_GLOBAL_CATALOG_UNAVAILABLE"}
+                "5"  { $IASLog."Reason-Code" = "IAS_DOMAIN_UNAVAILABLE"}
+                "6"  { $IASLog."Reason-Code" = "IAS_SERVER_UNAVAILABLE"}
+                "7"  { $IASLog."Reason-Code" = "IAS_NO_SUCH_DOMAIN"}
+                "8"  { $IASLog."Reason-Code" = "IAS_NO_SUCH_USER"}
                 "16" { $IASLog."Reason-Code" = "IAS_AUTH_FAILURE"}
                 "17" { $IASLog."Reason-Code" = "IAS_CHANGE_PASSWORD_FAILURE"}
                 "18" { $IASLog."Reason-Code" = "IAS_UNSUPPORTED_AUTH_TYPE"}
