@@ -102,7 +102,5 @@ function Get-IASLogs
     }
 }
 
-Get-IASLogs -IASLogFilePath "C:\Documents\Desktop\ias.log" -IASUSerName acm
-
 
 
